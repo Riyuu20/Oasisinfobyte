@@ -1,0 +1,750 @@
+!<DOCTYPE html>
+    <html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MY PORTFOLIO</title>
+        <link rel="stylesheet" href="Style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>"
+     </head>
+    <body>
+        <header class="header">
+            <a href="#home" class="logo">RIYA<span>GAUR</span></a>
+            <i class='bx bx-menu' id="menu-icon"></i> 
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#education"> Education</a>
+                <a href="#services" >Services</a>
+                <a href="#projects">Projects</a>
+               <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+                
+            </nav>
+        </header>
+       <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, Its <span>Riya</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Hello, I’m Riya Gaur — a dedicated and detail-oriented Frontend Developer with a strong foundation in UI/UX design and modern web technologies. I bring a creative mindset backed by technical proficiency in HTML, CSS, JavaScript, and responsive interface design. My focus lies in developing scalable, user-centric web solutions that align with industry standards and deliver seamless digital experiences.
+
+</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/riyagaur206/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Riyuu20"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/_iim_riyyaaa.26/?hl=en"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            </div>
+            <div class="home-img">
+                <img src="riya.jpeg" alt="home">
+            </div>
+
+       </section> 
+
+
+
+<!-- ======= ABOUT SECTION START ======= -->
+<section class="about-section" id="about">
+  <div class="about-container">
+    <!-- Left: Text Content -->
+    <div class="about-left">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I’m <strong>Riya Gaur</strong>, an ambitious <strong>Frontend Developer & UI/UX Designer</strong> currently pursuing my <strong>MCA at KIET</strong>. With a creative mind and a technical background in <strong>BCA</strong>, I specialize in building digital experiences that are beautiful, fast, and user-friendly. I’m skilled in <strong>HTML, CSS, JavaScript, Python, MySQL, C++</strong> and aim to craft experiences that people love using.
+      </p>
+       <button class="read-btn" onclick="openAboutModal()">Read More</button>
+    
+      <a href="RIYAGAUR.RESUME.RG.pdf" download class="download-btn">Download Resume</a>
+
+    </div>
+
+
+<div id="aboutModal" class="about-modal">
+  <div class="about-modal-content">
+    <span class="close-btn" onclick="closeAboutModal()">&times;</span>
+    <h2>More About Me</h2>
+    <p>
+      Hello again! I'm <strong>Riya Gaur</strong>, an enthusiastic and dedicated Frontend Developer & UI/UX Designer who believes in the power of creativity and code. My academic foundation is rooted in <strong>Computer Applications</strong>, and I’m currently pursuing my MCA at KIET while holding a BCA degree from IAMR. My skill set includes <strong>HTML, CSS, JavaScript, Python, C++, MySQL</strong>, and I focus on creating seamless, responsive user interfaces that delight users.<br><br>
+      My career vision is to contribute to modern web ecosystems by designing accessible and impactful web apps. I am passionate about turning ideas into functional and aesthetically pleasing digital products. My creative design sense and logical problem-solving ability allow me to merge UI/UX principles with front-end development efficiently.<br><br>
+      I love working in collaborative environments, learning new tech stacks, and constantly pushing my creative boundaries. From portfolios to responsive dashboards — I enjoy it all!
+    </p>
+  </div>
+</div>
+
+
+    <!-- Right: Cards Content -->
+    <div class="about-right">
+      <div class="info-card">
+        <h3>🎯 Career Goals</h3>
+        <p>To build intuitive, accessible, and responsive web solutions with elegant UI and smooth UX.</p>
+      </div>
+      <div class="info-card">
+        <h3>🎓 Education</h3>
+        <p>MCA – KIET Group of Institutions<br>BCA – IAMR College</p>
+      </div>
+      <div class="info-card">
+        <h3>🛠️ Skills</h3>
+        <p>HTML, CSS, JavaScript, Python, C++, MySQL, Responsive UI Design</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Quote & Line -->
+  <div class="about-bottom">
+    <hr />
+    <p class="tagline">“Working Hard Enough To Contribute My Valuable Skills Into Your Company”</p>
+  </div>
+</section>
+
+<!-- ======= CSS ======= -->
+<style>
+.about-section {
+  background: #0a0a0a;
+  color: #ffffff;
+  padding: 100px 8%;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.about-left {
+  flex: 1 1 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideInLeft 1s ease;
+}
+
+.about-left .section-title {
+  font-size: 48px;
+  color: #14b8a6;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-left .section-title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background: #14b8a6;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 10px;
+}
+
+.about-left p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #d4d4d4;
+  margin-bottom: 30px;
+}
+
+.download-btn {
+  background-color: #2e8b57;
+  color: white;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px #14b8a680;
+  width: fit-content;
+  margin: 10px;
+  margin-left: 270px;
+}
+
+.download-btn:hover {
+  background-color: #1f6b45;
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #14b8a6b0;
+}
+
+.about-right {
+  flex: 1 1 48%;
+  display: grid;
+  gap: 25px;
+  align-content: center;
+  animation: slideInRight 1s ease;
+}
+
+.info-card {
+  background: #151515;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(20, 184, 166, 0.1);
+  transition: 0.3s ease;
+  transform: translateZ(0);
+}
+
+.info-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 25px rgba(20, 184, 166, 0.3);
+}
+
+.info-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #14b8a6;
+}
+
+.info-card p {
+  font-size: 17px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.about-bottom {
+  margin-top: 60px;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+.about-bottom hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #14b8a6, transparent);
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #888;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right {
+    flex: 1 1 100%;
+  }
+
+  .about-bottom {
+    margin-top: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.about-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(10, 10, 10, 0.95);
+}
+
+.about-modal-content {
+  background-color: #1a1a1a;
+  margin: auto;
+  padding: 30px;
+  border: 2px solid #14b8a6;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  color: #ddd;
+  animation: fadeIn 0.4s;
+  position: relative;
+}
+
+.about-modal-content h2 {
+  color: #14b8a6;
+  margin-bottom: 15px;
+}
+
+.about-modal-content p {
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.close-btn {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #14b8a6;
+}
+
+.read-btn {
+  background-color: transparent;
+  border: 2px solid #14b8a6;
+  color: #14b8a6;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.read-btn:hover {
+  background-color: #14b8a6;
+  color: #0a0a0a;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<script>
+function openAboutModal() {
+  document.getElementById("aboutModal").style.display = "block";
+}
+
+function closeAboutModal() {
+  document.getElementById("aboutModal").style.display = "none";
+}
+
+// Optional: Close modal on outside click
+window.onclick = function (event) {
+  const modal = document.getElementById("aboutModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+</script>
+
+       
+       <section class="education" id="education">
+        <h2 class="heading">Education</h2> 
+
+        <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019</div>
+                <div class="timeline-content"> <h3>High School</h3> 
+                    <p>Completed High Schooling from L R Sraswati Public school in 2019 with 70% score . </p>
+                </div> 
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                <div class="timeline-content"> <h3>Intermediate</h3> 
+                    <p> Completed Inter schooling from Purngyananjali  Public school in 2021 with 74% score . </p>
+                </div>
+        </div> 
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                <div class="timeline-content"> <h3>University</h3> 
+                    <p> I've completed my bachelor's degree in BCA Program with CCS University . I scored 80% in BCA in 2024 </p>
+                </div>
+        </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026</div>
+                <div class="timeline-content"> <h3>University</h3> 
+                    <p>Currently I'm pursuing MCA from KIET GROUP OF INSTITUTIONS College Delhi NCR which will be completed in 2026 </p>
+                </div>
+            </div>
+        </div>
+       </section> 
+
+
+
+<!-- ======= SERVICES SECTION START ======= -->
+<section class="services-section" id="services">
+  <h2 class="section-title">My Services</h2>
+  <div class="services-grid">
+
+    <div class="service-box">
+      <img src="netflix.webD.png" alt="Web Development">
+      <div class="overlay">
+        <h3>Web Development</h3>
+        <p>I developed a full-featured Netflix Clone using HTML, CSS, and JavaScript with dynamic UI and responsive design. This project includes custom navigation, category sliders, hover previews, and a modern layout replicating the original Netflix interface. It reflects my ability to build high-quality, real-world web applications from scratch</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <img src="uber.ui.jpg" alt="UI/UX">
+      <div class="overlay">
+        <h3>UI/UX Design</h3>
+        <p>I designed an Uber Clone interface focused on intuitive navigation, clean layouts, and user-centered visual hierarchy. Using tools like Figma and Adobe XD, I created wireframes and prototypes that mimic real app behavior, ensuring accessibility and consistent user experience across all platforms.</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <img src="front.d.jpg" alt="Frontend">
+      <div class="overlay">
+        <h3>Frontend Development</h3>
+        <p>I specialize in crafting elegant and interactive frontends like this professional landing page. Built using modern frontend tools such as React, Tailwind CSS, and GSAP animations, the project demonstrates responsive layout, smooth scroll, and high-quality UI components tailored for real businesses.</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <img src="aws.png" alt="AWS Cloud">
+      <div class="overlay">
+        <h3>AWS Cloud Computing</h3>
+        <p>I have deployed scalable and secure web applications using AWS services like EC2, S3, Lambda, and CloudFront. My experience includes hosting static and dynamic websites, setting up CI/CD pipelines, and managing cloud-based storage and compute environments for real-world projects.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ======= SERVICES SECTION END ======= -->
+
+
+
+
+<section class="projects-showcase" id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="project-grid">
+
+    <!-- 1. Netflix Clone -->
+    <div class="project-item">
+      <div class="project-thumb">
+        <img src="IMG-20241209-WA0016.jpg" alt="Netflix Clone">
+      </div>
+      <div class="project-info">
+        <h3>WATPURE</h3>
+        <p>Responsive streaming site built with HTML, CSS & JS. Includes sliders, previews & dark UI.</p>
+        <span>HTML / CSS / JavaScript</span>
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Uber UI Clone -->
+    <div class="project-item">
+      <div class="project-thumb">
+        <img src="edledger.jpg" alt="Edledger">
+      </div>
+      <div class="project-info">
+        <h3>EDLEDGER</h3>
+        <p>Designed complete Uber clone UI in Figma with user-friendly flow and prototyping.</p>
+        <span>Figma / UI/UX</span>
+        <div class="project-links">
+          <a href="#" target="_blank">View Design</a>
+          <a href="#" target="_blank">Figma</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Frontend Landing Page -->
+    <div class="project-item">
+      <div class="project-thumb">
+        <img src="Screenshot 2025-04-30 023032.png" alt="Landing Page">
+      </div>
+      <div class="project-info">
+        <h3>GAMEZONE - Overtake Madness</h3>
+        <p>Built a modern, responsive product landing page with Tailwind, GSAP and scroll effects.</p>
+        <span>HTML / Tailwind / JS</span>
+        <div class="project-links">
+          <a href="#" target="_blank">Visit</a>
+          <a href="#" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. AWS Cloud Hosting -->
+    <div class="project-item">
+      <div class="project-thumb">
+        <img src="Screenshot 2025-07-01 221243.png" alt="AWS Project">
+      </div>
+      <div class="project-info">
+        <h3>MUSIC PLAYER</h3>
+        <p>Hosted and deployed live projects using AWS EC2, S3, and setup CloudFront CDN & routing.</p>
+        <span>AWS / EC2 / S3 / CloudFront</span>
+        <div class="project-links">
+          <a href="#" target="_blank">Live</a>
+          <a href="#" target="_blank">Guide</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. GameZone Website -->
+    <div class="project-item">
+      <div class="project-thumb">
+        <img src="gamezone.jpg" alt="GameZone Website">
+      </div>
+      <div class="project-info">
+        <h3>MOVIE SITE</h3>
+        <p>Gaming news portal with multilingual support (Hindi, French, German), newsletter, reviews.</p>
+        <span>HTML / CSS / JS / Translate API</span>
+        <div class="project-links">
+          <a href="#" target="_blank">Explore</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Hand Gesture Control -->
+    <div class="project-item">
+      <div class="project-thumb">
+        <img src="Screenshot 2025-07-04 160554.png" alt="Hand Gesture Control">
+      </div>
+      <div class="project-info">
+        <h3>Skkefy - Draw Anything</h3>
+        <p>Python-based real-time hand gesture detection to control media and apps using webcam.</p>
+        <span>Python / OpenCV / MediaPipe</span>
+        <div class="project-links">
+          <a href="#" target="_blank">Demo</a>
+          <a href="#" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+
+<section class="certificates-section" id="certificates">
+  <h2 class="section-title">My Certificates</h2>
+
+  <div class="certificate-wrapper">
+    <div class="certificate-carousel" id="carousel">
+      <!-- Certificate Cards -->
+      <div class="certificate-card">
+        <img src="AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250502-26-huhiiv-page-001.jpg" alt="Certificate 1" onclick="openModal('AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250502-26-huhiiv-page-001.jpg', 'AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250502-26-huhiiv-page-001.jpg')">
+      </div>
+      <div class="certificate-card">
+        <img src="Screenshot 2025-06-06 163333.png" alt="Certificate 2" onclick="openModal('Screenshot 2025-06-06 163333.png', 'Screenshot 2025-06-06 163333.png')">
+      </div>
+      <div class="certificate-card">
+        <img src="Screenshot 2025-06-06 163509.png" alt="Certificate 3" onclick="openModal('Screenshot 2025-06-06 163509.png', 'Screenshot 2025-06-06 163509.png')">
+      </div>
+      <div class="certificate-card">
+        <img src="Screenshot 2025-06-06 164634.png" alt="Certificate 4" onclick="openModal('Screenshot 2025-06-06 164634.png', 'Screenshot 2025-06-06 164634.png')">
+      </div>
+      <div class="certificate-card">
+        <img src="UdemyJAVA_page-0001 (1).jpg" alt="Certificate 5" onclick="openModal('UdemyJAVA_page-0001 (1).jpg', 'UdemyJAVA_page-0001 (1).jpg')">
+      </div>
+      <div class="certificate-card">
+        <img src="RIYA GAUR (2)_page-0001.jpg" alt="Certificate 6" onclick="openModal('RIYA GAUR (2)_page-0001.jpg', 'RIYA GAUR (2)_page-0001.jpg')">
+      </div>
+      <div class="certificate-card">
+        <img src="CRUDOperationsinMongoDB_Badge20250624-26-64h6ok_page-0001.jpg" alt="Certificate 7" onclick="openModal('CRUDOperationsinMongoDB_Badge20250624-26-64h6ok_page-0001.jpg', 'CRUDOperationsinMongoDB_Badge20250624-26-64h6ok_page-0001.jpg')">
+      </div>
+      <div class="certificate-card">
+        <img src="MongoDBSchemaDesignPatternsandAntipatternsSkillBadge_Badge20250624-25-vkhekf_page-0001.jpg" alt="Certificate 8" onclick="openModal('MongoDBSchemaDesignPatternsandAntipatternsSkillBadge_Badge20250624-25-vkhekf_page-0001.jpg', 'MongoDBSchemaDesignPatternsandAntipatternsSkillBadge_Badge20250624-25-vkhekf_page-0001.jpg')">
+      </div>
+      <div class="certificate-card">
+        <img src="certificate.png" alt="Certificate 9" onclick="openModal('certificate.png', 'certificate.png')">
+      </div>
+      <div class="certificate-card">
+        <img src="BuildingRAGAppsUsingMongoDB_Badge20250623-26-ebsgza_page-0001.jpg" alt="Certificate 10" onclick="openModal('BuildingRAGAppsUsingMongoDB_Badge20250623-26-ebsgza_page-0001.jpg', 'BuildingRAGAppsUsingMongoDB_Badge20250623-26-ebsgza_page-0001.jpg')">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a id="downloadBtn" href="#" download class="download-btn" onclick="event.stopPropagation()">Download Certificate</a>
+  </div>
+
+
+  <div class="achievements-block">
+  <div class="ach-item">
+    <h3>🏆 12+</h3>
+    <p>Certificates Earned</p>
+  </div>
+  <div class="ach-item">
+    <h3>💻 6+</h3>
+    <p>Web Projects</p>
+  </div>
+  <div class="ach-item">
+    <h3>👩‍🎓 3</h3>
+    <p>Workshops Attended</p>
+  </div>
+</div>
+
+
+<div class="hire-me-section">
+  <h3>Why Hire Me?</h3>
+  <p>
+    I’m a self-driven developer with a passion for clean design and meaningful user experiences.  
+    I specialize in Web Design, Frontend Development, UI/UX, and Cloud Computing.  
+    I love building real-world projects and bringing creative ideas to life with precision.
+  </p>
+</div>
+
+
+</section>
+
+
+  <script>
+
+// Modal Logic
+function openModal(imgSrc, pdfSrc) {
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("modalImage").src = imgSrc;
+  document.getElementById("downloadBtn").href = pdfSrc;
+}
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+// Clone Carousel for Seamless Loop
+window.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.getElementById("carousel");
+  const clone = carousel.innerHTML;
+  carousel.innerHTML += clone; // Doubles it for infinite scroll
+});
+
+
+</script>
+
+
+
+
+    <section class=" contact" id="contact">
+        <h2 class="heading"> Contact <span>Me</span></h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text"
+                    placeholder="Full Name">
+                    <input type="email"
+                    placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number"
+                    placeholder="Phone Number">
+                    <input type="text"
+                    placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit"  value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/riyagaur206/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Riyuu20"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/_iim_riyyaaa.26/?hl=en"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Testimonials</a>
+            </li>
+        </ul>
+        <p class="copyright">
+        &copy; Riya Gaur | All Rights Reserved.</p> 
+    </footer> 
+    <script src="script.js"></script>
+    </body>  
+    </html
