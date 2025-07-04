@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  transition: background 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+/* 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #5d7191, #0e425b, #9e4e87, #bc4c70);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  z-index: -2;
+  opacity: 0.9;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+ */
+
+
+.bg-cloud {
+
+  background: url('https://www.transparenttextures.com/patterns/cloudy-day.png') repeat-x;
+  
+
+
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 300%;
+  opacity: 0.2;
+  animation: cloudmove 60s linear infinite;
+  z-index: -1;
+}
+
+@keyframes cloudmove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-66%); }
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #333;
+  text-shadow: 1px 1px #bbb;
+}
+
+.full-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 2px solid #aaa;
+}
+
+.units {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #303f9f;
+}
+
+#result {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Temperature Effects */
+body.hot {
+  background: radial-gradient(circle, #ff6961, #ff0000);
+}
+body.cold {
+  background: radial-gradient(circle, #9de2ff, #007BFF);
+}
+body.normal {
+  background: radial-gradient(circle, #d4fc79, #96e6a1);
+}
+
+
+
+
+#effect-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Snowflake */
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: snowfall 5s linear infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Bubbles */
+.bubble {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: bubbleMove 8s linear infinite;
+}
+
+@keyframes bubbleMove {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Sparks for Hot */
+.spark {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: orange;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: sparkMove 2s linear infinite;
+}
+
+@keyframes sparkMove {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
